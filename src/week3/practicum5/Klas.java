@@ -29,7 +29,7 @@ public class Klas {
         String s = "In klas " + klasCode + " zitten de volgende leerlingen:" ;
         System.out.println(s);
         for (Leerling leerling : deleerling) {
-            System.out.println(leerling) ;
+            System.out.println(leerling);
         }
         return "";
     }
