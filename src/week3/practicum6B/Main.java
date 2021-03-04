@@ -1,4 +1,4 @@
-package week3.practicum6A;
+package week3.practicum6B;
 
 import java.time.LocalDate;
 
