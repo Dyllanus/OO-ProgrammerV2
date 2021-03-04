@@ -46,6 +46,13 @@ public class Persoon {
         return teKoop;
     }
 
+    public Game zoekGameOpNaam(String s) {
+        for (Game g : mijnGames){
+            if (g.getNaam().equals(s));
+            return g;
+        }
+        return null;
+    }
 
     public String toString(){
         String s =  naam + " heeft een budget van €" + String.format("%.2f", budget) + " en bezit de volgende games:";
@@ -57,7 +64,4 @@ public class Persoon {
         }
         return s;
     }
-
-
-
 }
