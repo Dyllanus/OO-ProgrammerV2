@@ -39,6 +39,12 @@ public class Persoon {
 
         return kanVerkoop;
     }
+    public ArrayList<Game> bepaalGamesNietInBezit(ArrayList<Game> teKoop) {
+        for (Game mijn : mijnGames){
+            teKoop.removeIf(mijn::equals);
+        }
+        return teKoop;
+    }
 
 
     public String toString(){
@@ -51,4 +57,7 @@ public class Persoon {
         }
         return s;
     }
+
+
+
 }
