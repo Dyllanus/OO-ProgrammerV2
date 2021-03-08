@@ -1,8 +1,6 @@
 package week3.practicum6A;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-
 
 public class Game {
     private String naam;
@@ -35,7 +33,7 @@ public class Game {
         boolean gelijkeObjecten = false;
         if (andereObject instanceof Game){
             Game andereGame = (Game) andereObject;
-            if(this.naam.equals(andereGame.naam) && this.releaseJaar == andereGame.releaseJaar ){
+            if(this.naam.equals(andereGame.naam) && this.releaseJaar == andereGame.releaseJaar){
                 gelijkeObjecten = true;
             }
         }

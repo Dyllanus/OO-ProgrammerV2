@@ -27,10 +27,9 @@ public class Klas {
 
     public String toString(){
         String s = "In klas " + klasCode + " zitten de volgende leerlingen:" ;
-        System.out.println(s);
         for (Leerling leerling : deleerling) {
-            System.out.println(leerling);
+            s += "\n" + leerling;
         }
-        return "";
+        return s + "\n";
     }
 }
