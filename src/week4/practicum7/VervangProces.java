@@ -12,7 +12,7 @@ public class VervangProces implements OpmaakProces{
     @Override
     public String maakOp(String input) {
         if (input.contains(oud)){
-           input = input.replaceAll(oud, nieuw);
+           input = input.replace(oud, nieuw);
         }
         return input;
     }
